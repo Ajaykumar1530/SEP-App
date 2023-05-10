@@ -1,0 +1,68 @@
+﻿@model IEnumerable<SEP_App.Models.AddCandidate>;
+<h1 align="center">candidates List</h1>
+<br />
+<form asp-action="ViewCandidates" asp-controller="PreSEP" method="get">
+<div class="container-fluid my-custom-class" style="overflow:auto;">
+    <div class="table-responsive" style="height: 400px;">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>CandidateName</th>
+                    <th>Referredby</th>
+                    <th>Address</th>
+                    <th>PreviousExperience</th>
+                    <th>HighestQualification</th>
+                    <th>Passoutyear</th>
+                    <th>Technology</th>
+                    <th>CareerGap</th>
+                    <th>Contact</th>
+                    <th>CandidateResume</th>
+                    <th>Image</th>
+
+                </tr>
+            </thead>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.CandidateName</td>
+                    <td>@item.Referredby</td>
+                    <td>@item.Address</td>
+                    <td>@item.PreviousExperience</td>
+                    <td>@item.HighestQualification</td>
+                    <td>@item.Passoutyear</td>
+                    <td>@item.Technology</td>
+                    <td>@item.CareerGap</td>
+                    <td>@item.Contact</td>
+                    <td>
+                        @if(item.Resume != null)
+                            {
+                                <a asp-action="DownloadResumefromdb" asp-route-id="@item.id">Download Resume</a>
+                            }
+                            else
+                            {
+                                <span>No resume available</span>
+                            }
+                    </td>
+                    <td>@if(item.Image != null)
+                            {
+                                <a asp-action="DownloadImagefromdb" asp-route-id="@item.id">Download Image</a>
+                            }
+                            else
+                            {
+                                <span>No Image available</span>
+                            }<td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+</form>
+
+
+
+
+

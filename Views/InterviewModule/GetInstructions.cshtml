@@ -1,0 +1,70 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Form with Different Div Tags</title>
+	<style>
+		.form-container {
+			border: 1px solid #ccc;
+			padding: 10px;
+			width: 400px;
+			margin: 0 auto;
+		}
+		.form-group {
+			margin-bottom: 10px;
+		}
+		.form-label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		.form-input {
+			width: 100%;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+	</style>
+</head>
+<body class="no-hover">
+<form asp-action="GetAllQuestions" asp-controller="InterviewModule" method="get">
+	<div class="form-container">
+		<div class="form-group" justify-content: space-between;>
+			<button type="button" class="btn btn-primary">Csharp</button>
+			<button type="button" class="btn btn-success">ASP.NET</button>
+			<button type="button" class="btn btn-info">ADO.NET</button>
+			<button type="button" class="btn btn-warning">SQL Server</button>
+			
+		</div>
+		<div class="form-group">
+			<ol type="1">
+				<li>
+			      Read the instructions carefully: Before starting the exam, make sure to read all the instructions provided carefully
+				</li>
+				<li>
+			     Read the questions thoroughly: Read each question carefully and understand what it is asking. Make sure you understand the question before selecting an answer.
+				</li>
+				<li>
+			      Manage your time: Keep track of the time remaining and make sure you have enough time to answer all the questions. 
+				</li>
+				<li>
+			     Submit the exam: Once you've reviewed your answers, click the submit button to complete the exam.
+				</li>
+			</ol>
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary">Start Test</button>
+		</div>
+		@*<div class="form-group">
+			<label class="form-label" for="message">Message:</label>
+			<textarea class="form-input" id="message" name="message"></textarea>
+		</div>
+		<div class="form-group">
+			 <button type="submit">Submit</button>
+		</div>*@
+	</div>
+	</form>
+</body>
+</html>
+
+

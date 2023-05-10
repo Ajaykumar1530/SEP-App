@@ -1,0 +1,21 @@
+﻿
+@model SEP_App.Models.OnlineTest
+
+@if (ViewData["score"] != null)
+{
+    <h1>Your score is : @ViewData["score"]</h1>
+    
+}
+<br />
+<br />
+<form asp-action="ScoreSubmission" asp-controller="InterviewModule" method="post">
+
+<button type="submit" class="btn btn-info">Take Test Again</button>
+</form>
+
+
+   
+
+
+
+   

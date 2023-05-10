@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SEP_App
+build_property.RootNamespace = SEP_App
+build_property.ProjectDir = D:\Angular Project\FullStackAPI\SEP-App\SEP-App\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Angular Project\FullStackAPI\SEP-App\SEP-App
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/Contact/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/Contact/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/InterviewModule/GetAllQuestions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2aWV3TW9kdWxlXEdldEFsbFF1ZXN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/InterviewModule/GetInstructions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2aWV3TW9kdWxlXEdldEluc3RydWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/InterviewModule/GetScore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2aWV3TW9kdWxlXEdldFNjb3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/InterviewModule/TestSubmission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2aWV3TW9kdWxlXFRlc3RTdWJtaXNzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/PreSEP/AddCandidate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlU0VQXEFkZENhbmRpZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/PreSEP/CandidateInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlU0VQXENhbmRpZGF0ZUluZm9ybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/PreSEP/CandidateSignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlU0VQXENhbmRpZGF0ZVNpZ25Jbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/PreSEP/ViewCandidates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlU0VQXFZpZXdDYW5kaWRhdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/Shared/_Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Angular Project/FullStackAPI/SEP-App/SEP-App/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-o8t44nan13

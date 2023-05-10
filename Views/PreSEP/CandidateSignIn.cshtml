@@ -1,0 +1,30 @@
+﻿@model SEP_App.Models.CandidateDetails
+<h1 align="center">Candidate Sign In</h1>
+<br />
+<div class="container-fluid my-custom-class" style="overflow:auto;">
+<form asp-action="CandidateSignIn" asp-controller="PreSEP" class="my-form" method="post" >
+  <div class="table-responsive" style="height: 350px;">
+    <table class="table table-striped">
+  <tr>
+    <td><h3>Email</h3></td>
+    <td><h3><input asp-for="Email" /></h3></td>
+  </tr>
+  <tr>
+      <td><h3>Password</h3></td>
+    <td><h3><input asp-for="Password" /></h3></td>
+  </tr>
+   <tr>
+    <td><button type="submit" class="btn btn-primary"/>Submit</td> 
+    <td align="justify"><h2><a asp-action="CandidateInformation" asp-controller="PreSEP" formmethod="get">SignUp</a></h2></td>
+  </tr>        
+</table>
+</div>
+@if(ViewBag.Message != null)
+{
+    <h3>@ViewBag.Message</h3>
+}
+</form>
+
+</div>
+
+

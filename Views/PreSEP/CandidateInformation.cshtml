@@ -1,0 +1,56 @@
+﻿@model SEP_App.Models.CandidateDetails
+
+<h1 align="center">Candidate Details</h1>
+<br />
+<div class="container-fluid my-custom-class" style="overflow:auto;">
+<form asp-action="CandidateInformation" asp-controller="PreSEP" class="my-form" method="post" >
+  <div class="table-responsive" style="height: 400px;">
+    <table class="table table-striped">
+  <tr>
+    <td><h3>Name</h3></td>
+    <td><h3><input asp-for="CandidateName" /></h3></td>
+  </tr>
+  <tr>
+      <td><h3>Age</h3></td>
+    <td><h3><input asp-for="Age" /></h3></td>
+  </tr>
+  <tr>
+    <td><h3>Mobile Number</h3></td>
+    <td><h3><input asp-for="MobileNo" /></h3></td>
+  </tr>
+   <tr>
+    <td><h3>Email</h3></td>
+    <td><h3><input asp-for="Email" /></h3></td> 
+  </tr>
+  <tr>
+    <td><h3>Password</h3></td>
+    <td><h3><input asp-for="Password" /></h3></td> 
+  </tr>
+  <tr>
+    <td><h3>ConfirmPassword</h3></td>
+    <td><h3><input asp-for="ConfirmPassword" /></h3></td> 
+  </tr>
+   <tr>
+    <td><h3>Passout Year</h3></td>
+    <td><h3><input asp-for="Passoutyear" /></h3></td>  
+  </tr>
+   <tr>
+   <td><h3>Highest Qualification</h3></td>
+   <td><h3><input asp-for="HighestQualification" /></h3></td>  
+  </tr>
+   <tr>
+    <td><button type="submit" class="btn btn-primary"/>Submit</td>  
+    <td align="justify"><h2><a asp-action="CandidateSignIn" asp-controller="PreSEP">SignIn</a></h2></td>
+  </tr>        
+</table>
+@if (ViewBag.Message != null)
+{
+   <h3>@ViewBag.Message</h3>
+}
+</div>
+<br />
+</form>
+</div>
+<br />
+
+

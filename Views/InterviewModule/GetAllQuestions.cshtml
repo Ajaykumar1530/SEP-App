@@ -1,0 +1,112 @@
+﻿@model IEnumerable<SEP_App.Models.OnlineTest>;
+
+
+<div id="exam-timer"> </div>
+<h1 align="center">Interview Questions</h1>
+<br />
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/timer.css">
+ 
+    <script>
+        // Select all radio buttons with class "option"
+        const options = document.querySelectorAll('.option');
+        // Listen for changes to the radio buttons
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Count the number of radio buttons that are checked
+                counter = document.querySelectorAll('.option:checked').length;
+
+                // Update the counter display
+                const counterDisplay = document.querySelector('#counter-display');
+                counterDisplay.textContent = `Answered ${counter}/@Model.Count() questions`;
+            });
+        });
+        //function for timer
+        window.onload = function() {
+            updateExamTimer(1); // Set the total exam time to 60 minutes.
+        };
+
+
+        //function for Timer
+        function updateExamTimer(totalExamTimeInMinutes) {
+    var startTime = new Date().getTime();
+    var examEndTime = startTime + totalExamTimeInMinutes * 60 * 1000;
+    var examTimerElement = document.getElementById("exam-timer");
+
+    var updateTimerInterval = setInterval(function () {
+        var currentTime = new Date().getTime();
+        var elapsedTime = examEndTime - currentTime;
+
+        if (elapsedTime <= 0) {
+            clearInterval(updateTimerInterval);
+            examTimerElement.innerText = "00:00";      
+           document.getElementById('myButton').click();
+            // TODO: Add logic to submit the exam when the time is up.
+        } else {
+            var minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+            var seconds = Math.floor((elapsedTime / 1000) % 60);
+
+            var minutesDisplay = (minutes < 10 ? "0" : "") + minutes;
+            var secondsDisplay = (seconds < 10 ? "0" : "") + seconds;
+
+            examTimerElement.innerText = minutesDisplay + ":" + secondsDisplay;
+        }
+    }, 1000);
+}
+    </script>
+
+</head>
+<body class="no-hover">
+    <form asp-action="TestSubmission" asp-controller="InterviewModule" class="my-form" method="post">
+
+        @if (Model != null)
+        {
+            <table>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Qno.@item.Question</td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="radio" name="question@(item.Qno)" value="1" class="option" /> @item.OptionA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="radio" name="question@(item.Qno)" value="2" class="option" /> @item.OptionB
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="radio" name="question@(item.Qno)" value="3" class="option" /> @item.OptionC
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="radio" name="question@(item.Qno)" value="4" class="option" /> @item.OptionD
+
+                        </td>
+                    </tr>
+                }
+            </table>
+            <p id="counter-display">Answered 0/@Model.Count() questions</p>
+        }
+        <br />
+        <br />
+        <button id="myButton" type="submit" class="btn btn-info btn-1g">Submit</button>
+    </form>
+</body>
+</html>
+
+
+
+
+

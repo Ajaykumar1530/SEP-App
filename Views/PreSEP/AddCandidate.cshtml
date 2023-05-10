@@ -1,0 +1,68 @@
+﻿@model SEP_App.Models.AddCandidate
+
+<h1 align="center">Add Candidate</h1>
+<br />
+<div class="container-fluid my-custom-class" style="overflow:auto;">
+<form asp-action="AddCandidate" asp-controller="PreSEP" class="my-form" method="get" enctype="multipart/form-data" >
+  <div class="table-responsive" style="height: 400px;">
+    <table class="table table-striped" >
+  <tr>
+    <td><h3>CandidateName</h3></td>
+    <td><h3><input asp-for="CandidateName" /></h3></td>
+  </tr>
+  <tr>
+      <td><h3>Referred By</h3></td>
+    <td><h3><input asp-for="Referredby" /></h3></td>
+  </tr>
+  <tr>
+    <td><h3>Address</h3></td>
+    <td><h3><input asp-for="Address" /></h3></td>
+  </tr>
+   <tr>
+    <td><h3>Previous Experience</h3></td>
+    <td><h3><input asp-for="PreviousExperience" /></h3></td> 
+  </tr>
+  <tr>
+    <td><h3>Highest Qualification</h3></td>
+    <td><h3><input asp-for="HighestQualification" /></h3></td> 
+  </tr>
+  <tr>
+    <td><h3>Passout Year</h3></td>
+    <td><h3><input asp-for="Passoutyear" /></h3></td> 
+  </tr>
+   <tr>
+    <td><h3>Technology</h3></td>
+    <td><h3><input asp-for="Technology" /></h3></td>  
+  </tr>
+   <tr>
+   <td><h3>Career Gap</h3></td>
+   <td><h3><input asp-for="CareerGap" /></h3></td>  
+  </tr>
+   <tr>
+   <td><h3>Contact Number</h3></td>
+   <td><h3><input asp-for="Contact" /></h3></td>  
+  </tr>
+   <tr>
+   <td><h3>Email Address</h3></td>
+   <td><h3><input asp-for="Email" /></h3></td>  
+  </tr>
+   <tr>
+   <td><h3>Upload Resume</h3></td>
+   <td><input type="file" name="file" /></td>
+  </tr>
+   <tr>
+   <td><h3>Upload Image</h3></td>
+   <td><input type="file" name="file" /></td>
+  </tr>
+   <tr>
+    <td><button type="submit" class="btn btn-primary" formmethod="post"/>Submit</td>  
+  </tr>        
+</table>
+</div>
+</form>
+@if(ViewBag.Message != null)
+{
+    <h4>@ViewBag.Message</h4>
+}
+</div>
+<br />

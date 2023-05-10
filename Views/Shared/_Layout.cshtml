@@ -1,0 +1,95 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SEP_App.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4" align="center">@ViewData["Title"]</h1>
+    </div>
+   <header>
+        <img src="~/Antra.jpg" align="left" height="150" width="200"/>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Pre-Interview Process</a>
+            <ul class="dropdown">
+             <li><a asp-controller="PreSEP" asp-action="AddCandidate">Add Candidate</a></li>
+             <li><a asp-controller="PreSEP" asp-action="ViewCandidates">View Candidates</a></li>
+            <li><a asp-controller="PreSEP" asp-action="CandidateInformation">Candidate Registration</a></li>
+             <li><a asp-controller="PreSEP" asp-action="RegisteredCandidates">Registered Candidates</a></li>
+            <li><a href="#">Communicate to candidate</a></li>
+            </ul>
+            </li>
+            </li>
+            <li>
+                <a href="#">Interview</a>
+                 <ul class="dropdown">
+                  <li><a asp-controller="PreSEP" asp-action="CandidateSignIn">Online test</a></li>
+                  <li><a href="#">Written test</a></li>
+                  <li><a href="#">Direct Interview </a></li>
+                  <li><a asp-controller="InterviewModule" asp-action="GetScore">View Score </a></li>
+            </ul>
+            </li>
+            <li>
+                <a href="#">SEP-Onboarding</a>
+                <ul class="dropdown">
+                  <li><a href="#">Selection list</a></li>
+                  <li><a href="#">Onboarding</a></li>
+            </ul>
+            </li>
+            <li>
+                <a href="#">Training</a>
+                <ul class="dropdown">
+                  <li><a href="#">Attendance</a></li>
+                  <li><a href="#">Assessments</a></li>
+                   <li><a href="#">Email</a></li>
+            </ul>    
+            </li>
+            <li>
+                <a href="#">Human Resource</a>
+                 <ul class="dropdown">
+                  <li><a href="#">Agreement and Bond</a></li>
+                  <li><a href="#">Client onboarding</a></li>
+                   <li><a href="#">Client offboarding</a></li>
+                   <li><a href="#">Employee Exit</a></li>
+            </ul>        
+            </li>
+            <li>
+                <a href="#">Post-training</a>
+                 <ul class="dropdown">
+                  <li><a href="#">Resume Preparation</a></li>
+                  <li><a href="#">Mock Interviews</a></li>
+                   <li><a href="#">Client Interviews</a></li>
+                   <li><a href="#">Bench</a></li>
+            </ul>            
+            </li>
+            <li>
+                <a asp-controller="Contact" asp-action="ContactUs">Contact Us</a>
+            </li>
+           
+        </ul>     
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-4">
+            @RenderBody()
+        </main>
+    </div>
+    
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - SEP_App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

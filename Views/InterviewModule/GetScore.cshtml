@@ -1,0 +1,31 @@
+﻿@model IEnumerable<SEP_App.Models.CandidateDetails>;
+<h1 align="center">candidates scores</h1>
+<br />
+<div class="container-fluid my-custom-class" style="overflow:auto;">
+    <div class="table-responsive" style="height: 400px;">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CandidateName</td>
+                    <td>@item.Email</td>
+                    <td>@item.score</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+
+
+
+
+
